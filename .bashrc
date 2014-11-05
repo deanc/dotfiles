@@ -1,3 +1,6 @@
+# do nothing unless we are interactive working
+[[ $- == *i* ]] || return
+
 # Tell ls to be colourful
 export CLICOLOR=1
 
